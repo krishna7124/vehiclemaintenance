@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vehicle Maintenance Check</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Vehicle Maintenance Check</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="model">Model:</label>
+        <select id="model" name="model" required>
+          <option value="">Select Model</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="truck">Truck</option>
+          <option value="other">Other</option>
+        </select><br>
+        <label for="last_mileage">Last Mileage:</label>
+        <input type="text" id="last_mileage" name="last_mileage" required><br>
+        <label for="current_mileage">Current Mileage:</label>
+        <input type="text" id="current_mileage" name="current_mileage" required><br>
+        <input type="submit" value="Check Maintenance" onclick="checkMaintenance(event)">
+
+      </form>
+  
+  
+    <div id="output"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
